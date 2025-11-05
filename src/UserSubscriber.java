@@ -17,5 +17,6 @@ public class UserSubscriber implements Subscriber{
     @Override
     public void update(Article article) {
         strategy.send(recipient,article);
+        System.out.println("subscriber: "+this.recipient+" recived new article: "+article.title());
     }
 }

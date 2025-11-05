@@ -17,5 +17,10 @@ public class NewsAgency {
         }
     }
 
+    public void publishArticle(Article article){
+        this.notifyNewArticle(article);
+        System.out.println("new article was published! Category: "+article.category());
+    }
+
 
 }
